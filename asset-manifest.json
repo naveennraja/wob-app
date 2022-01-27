@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/naveennraja/wob-app.io/static/css/main.073c9b0a.css",
-    "main.js": "/naveennraja/wob-app.io/static/js/main.5d1ed258.js",
-    "static/js/787.136530f9.chunk.js": "/naveennraja/wob-app.io/static/js/787.136530f9.chunk.js",
-    "static/media/logo.svg": "/naveennraja/wob-app.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/naveennraja/wob-app.io/index.html",
-    "main.073c9b0a.css.map": "/naveennraja/wob-app.io/static/css/main.073c9b0a.css.map",
-    "main.5d1ed258.js.map": "/naveennraja/wob-app.io/static/js/main.5d1ed258.js.map",
-    "787.136530f9.chunk.js.map": "/naveennraja/wob-app.io/static/js/787.136530f9.chunk.js.map"
+    "main.css": "/naveennraja.github.io/wob-app/static/css/main.073c9b0a.css",
+    "main.js": "/naveennraja.github.io/wob-app/static/js/main.716d3e18.js",
+    "static/js/787.136530f9.chunk.js": "/naveennraja.github.io/wob-app/static/js/787.136530f9.chunk.js",
+    "static/media/logo.svg": "/naveennraja.github.io/wob-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/naveennraja.github.io/wob-app/index.html",
+    "main.073c9b0a.css.map": "/naveennraja.github.io/wob-app/static/css/main.073c9b0a.css.map",
+    "main.716d3e18.js.map": "/naveennraja.github.io/wob-app/static/js/main.716d3e18.js.map",
+    "787.136530f9.chunk.js.map": "/naveennraja.github.io/wob-app/static/js/787.136530f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.5d1ed258.js"
+    "static/js/main.716d3e18.js"
   ]
 }
