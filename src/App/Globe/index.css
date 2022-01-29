@@ -1,0 +1,44 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+
+body
+{
+    overflow: hidden;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+
+.loading-bar{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 50%;
+    height: 16px;
+    transform: scaleX(0.3);
+    transform-origin:top left ;
+    z-index: 12;
+    transition: transform 1s;
+    border-radius: 25px;
+}
+  
+.loading-canvas{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #5CBEF7;
+    z-index: 11;
+}
+
+/*# sourceMappingURL=main.css.map*/
