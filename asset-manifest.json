@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/wob-app/static/css/main.073c9b0a.css",
-    "main.js": "/wob-app/static/js/main.50d1658d.js",
-    "static/js/787.136530f9.chunk.js": "/wob-app/static/js/787.136530f9.chunk.js",
-    "static/media/logo.svg": "/wob-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.js": "/wob-app/static/js/main.5396dec3.js",
+    "static/media/earth-large.jpg": "/wob-app/static/media/earth-large.b1a1ed4fe0a37d45b0cd.jpg",
+    "static/media/background.png": "/wob-app/static/media/background.6376a942e1ef27fea433.png",
+    "static/media/bump-large.jpg": "/wob-app/static/media/bump-large.a528dc07db214eef2886.jpg",
+    "static/media/clouds-large.jpg": "/wob-app/static/media/clouds-large.9d80ff3610e57349629e.jpg",
     "index.html": "/wob-app/index.html",
     "main.073c9b0a.css.map": "/wob-app/static/css/main.073c9b0a.css.map",
-    "main.50d1658d.js.map": "/wob-app/static/js/main.50d1658d.js.map",
-    "787.136530f9.chunk.js.map": "/wob-app/static/js/787.136530f9.chunk.js.map"
+    "main.5396dec3.js.map": "/wob-app/static/js/main.5396dec3.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.50d1658d.js"
+    "static/js/main.5396dec3.js"
   ]
 }
