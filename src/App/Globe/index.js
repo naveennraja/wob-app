@@ -1,377 +1,24 @@
-import React, {useState,useEffect} from 'react';
-// import "./index.css"
+import React, {useState, useEffect} from 'react';
 import ReactGlobe from "react-globe";
 import backgroundImage  from "./textures/background.png"
 import earthImage  from "./textures/earth-large.jpg"
 import cloudImage from "./textures/clouds-large.jpg"
 import bumpImage from "./textures/bump-large.jpg"
+import markerImage from "./textures/markers.png"
 import particle from "./textures/particle.png"
-export default ()=> {
-  const markers = [
-    {
-       id: 'marker1',
-       city: 'Loretto',
-       color: 'gold',
-       coordinates: [37.6335736,-85.4130675],
-       value: 1,
-     },
-     {
-       id: 'marker2',
-       city: 'Clermont',
-       color: 'gold',
-       coordinates: [37.9298019,-85.6614903],
-       value: 1,
-     },
-     {
-       id: 'marker3',
-       city: 'Tennessee',
-       color: 'gold',
-       coordinates: [35.8141315,-88.2220562],
-       value: 10,
-     },
-     {
-       id: 'marker4',
-       city: 'Calgary',
-       color: 'gold',
-       coordinates: [51.0277202,-114.3680139],
-       value: 1,
-     },
-     {
-       id: 'marker5',
-       city: 'Gimli',
-       color: 'gold',
-       coordinates: [10.6329514,-96.9936046],
-       value: 1,
-     },
-     {
-       id: 'marker6',
-       city: ' Windsor',
-       color: 'gold',
-       coordinates: [42.2951067,-83.0729219],
-       value: 1,
-     },
-     {
-       id: 'marker7',
-       city: ' El Alto',
-       color: 'gold',
-       coordinates: [20.5530788,-102.5316817],
-       value: 1,
-     },
-     {
-       id: 'marker8',
-       city: 'Tequila',
-       color: 'gold',
-       coordinates: [20.5530788,-102.5316817],
-       value: 1,
-     },
-     {
-       id: 'marker9',
-       city: ' Cachaca	Salinas	Brazil	',
-       color: 'gold',
-       coordinates: [-16.1646482,-42.3140234],
-       value: 1,
-     },
-     {
-       id: 'marker10',
-       city: ' Monte Alegre Do Sul	Brazil	',
-       color: 'gold',
-       coordinates: [-22.6853324,-46.6984446],
-       value: 1,
-     },
-     {
-      id: 'marker11',
-      city: 'Maipu',
-      color: 'gold',
-      coordinates: [-32.9653462,-68.8199389],
-      value: 1,
-    },
-    {
-      id: 'marker12',
-      city: 'Elqui',
-      color: 'gold',
-      coordinates: [-29.7753646,-71.3024869],
-      value: 1,
-    },
-    {
-      id: 'marker13',
-      city: 'Kingston',
-      color: 'gold',
-      coordinates: [18.0180148,-76.8356758],
-      value: 1,
-    },
-    {
-      id: 'marker14',
-      city: 'Cardenas',
-      color: 'gold',
-      coordinates: [23.0374078,-81.22675],
-      value: 1,
-    },
-    {
-      id: 'marker15',
-      city: 'Zacapa',
-      color: 'gold',
-      coordinates: [57.4479529,-3.1381903],
-      value: 1,
-    },
-    {
-      id: 'marker16',
-      city: ' Dufftown',
-      color: 'gold',
-      coordinates: [42.2951067,-83.0729219],
-      value: 1,
-    },
-    {
-      id: 'marker17',
-      city: ' Carbost',
-      color: 'gold',
-      coordinates: [57.2999647,-6.3545429],
-      value: 1,
-    },
-    {
-      id: 'marker18',
-      city: 'Ardberg',
-      color: 'gold',
-      coordinates: [55.6419423,-6.1220798],
-      value: 1,
-    },
-    {
-      id: 'marker19',
-      city: ' Kilmarnock',
-      color: 'gold',
-      coordinates: [55.6090662,-4.538283],
-      value: 1,
-    },
-    {
-      id: 'marker20',
-      city: 'Keith',
-      color: 'gold',
-      coordinates: [57.5423485,-2.9709663],
-      value: 1,
-    },
-    {
-      id: 'marker21',
-      city: 'County Cork',
-      color: 'gold',
-      coordinates: [51.9034452,-9.5999206],
-      value: 1,
-    },
-    {
-      id: 'marker22',
-      city: 'Bushmills',
-      color: 'gold',
-      coordinates: [55.2014017,-6.5296096],
-      value: 1,
-    },
-    {
-      id: 'marker23',
-      city: 'Whitchurch',
-      color: 'gold',
-      coordinates: [52.9695387,-2.70118],
-      value: 1,
-    },
-    {
-      id: 'marker24',
-      city: 'London',
-      color: 'gold',
-      coordinates: [51.5287718,-0.2416813],
-      value: 1,
-    },
-    {
-      id: 'marker25',
-      city: 'Cognac',
-      color: 'gold',
-      coordinates: [45.6960596,-0.3551489],
-      value: 1,
-    },
-    {
-      id: 'marker26',
-      city: ' Rouillac',
-      color: 'gold',
-      coordinates: [45.7937895,-0.1429403],
-      value: 1,
-    },
-    {
-      id: 'marker27',
-      city: ' Jerez De La Frontera',
-      color: 'gold',
-      coordinates: [36.6876388,-6.1404949],
-      value: 1,
-    },
-    {
-      id: 'marker28',
-      city: 'Douro',
-      color: 'gold',
-      coordinates: [41.1703356,-7.5849991],
-      value: 1,
-    },
-    {
-      id: 'marker29',
-      city: ' Novara',
-      color: 'gold',
-      coordinates: [	45.5843333,8.2965636],
-      value: 1,
-    },
-    {
-      id: 'marker30',
-      city: 'Veneto',
-      color: 'gold',
-      coordinates: [45.7322823,10.7409054],
-      value: 1,
-    },
-    {
-      id: 'marker31',
-      city: 'Siedlce',
-      color: 'gold',
-      coordinates: [52.1616934,22.241703],
-      value: 1,
-    },
-    {
-      id: 'marker32',
-      city: 'Poznan',
-      color: 'gold',
-      coordinates: [52.4006553,16.7615834],
-      value: 1,
-    },
-    {
-      id: 'marker33',
-      city: 'Wolfenbuttel',
-      color: 'gold',
-      coordinates: [52.1722578,10.4682936],
-      value: 1,
-    },
-    {
-      id: 'marker34',
-      city: 'Koskenkorva',
-      color: 'gold',
-      coordinates: [62.6909911,22.4451737],
-      value: 1,
-    },
-    {
-      id: 'marker35',
-      city: 'Ahus',
-      color: 'gold',
-      coordinates: [55.9264381,14.2625262],
-      value: 1,
-    },
-    {
-      id: 'marker36',
-      city: ' Aalborg',
-      color: 'gold',
-      coordinates: [57.0269106,9.8377346],
-      value: 1,
-    },
-    {
-      id: 'marker37',
-      city: 'Karlovy Vary',
-      color: 'gold',
-      coordinates: [50.2169842,12.7942749],
-      value: 1,
-    },
-    {
-      id: 'marker38',
-      city: 'Budapest',
-      color: 'gold',
-      coordinates: [47.4813602,18.9902198],
-      value: 1,
-    },
-    {
-      id: 'marker39',
-      city: ' Moscow',
-      color: 'gold',
-      coordinates: [55.5815244,36.8251261],
-      value: 1,
-    },
-    {
-      id: 'marker40',
-      city: 'Saint Petersburg',
-      color: 'gold',
-      coordinates: [59.9399139,29.534286],
-      value: 1,
-    },
-    {
-       id: 'marker41',
-       city: 'Moscow',
-       color: 'gold',
-       coordinates: [	55.5815244,36.8251261],
-       value: 1,
-     },
-     {
-       id: 'marker42',
-       city: 'Bundaberg',
-       color: 'gold',
-       coordinates: [-24.8676682,152.3474934],
-       value: 1,
-     },
-     {
-       id: 'marker43',
-       city: 'Niigata',
-       color: 'gold',
-       coordinates: [37.8405505,138.8855481],
-       value: 1,
-     },
-     {
-       id: 'marker44',
-       city: 'Shimamoto',
-       color: 'gold',
-       coordinates: [34.902421,135.6203483],
-       value: 1,
-     },
-     {
-       id: 'marker45',
-       city: 'Hakushucho Shirasu',
-       color: 'gold',
-       coordinates: [35.7988292,138.229026],
-       value: 1,
-     },
-     {
-       id: 'marker46',
-       city: ' Gyeongsangnam Do',
-       color: 'gold',
-       coordinates: [	35.1813852,127.8306014],
-       value: 1,
-     },
-     {
-       id: 'marker47',
-       city: 'Maotai',
-       color: 'gold',
-       coordinates: [	27.8521002,106.3668182],
-       value: 1,
-     },
-     {
-       id: 'marker48',
-       city: 'Yibin',
-       color: 'gold',
-       coordinates: [28.7707239,104.5595754],
-       value: 1,
-     },
-     {
-       id: 'marker49',
-       city: ' Beijing',
-       color: 'gold',
-       coordinates: [39.9390731,116.1172741],
-       value: 1,
-     },
-     {
-       id: 'marker50',
-       city: 'Luzhou',
-       color: 'gold',
-       coordinates: 	[28.8806979,105.3853202],
-       value: 1,
-     },
-     {
-       id: 'marker51',
-       city: 'Kasauli',
-       color: 'gold',
-       coordinates: 	[30.8996091,76.9590997],
-       value: 1,
-     }
- ];
+import * as THREE from "three";
 
-  // simple and extensive options to configure globe
+import Markers from './Markers';
+export default ()=> {
+  const [marker,setMarkers]= useState(null);
+  useEffect(() => {
+    setMarkers(Markers);
+   
+  },[Markers]);
+
   const options = {
     // ambientLightColor: 'gold',
     cameraAutoRotateSpeed: 0.3,
-    
     cameraRotateSpeed: 0.1,
     enableCameraAutoRotate: true,
     enableCameraRotate: true,
@@ -383,20 +30,26 @@ export default ()=> {
     markerEnterEasingFunction: ['Bounce', 'InOut'],
     markerExitAnimationDuration: 2e3,
     markerExitEasingFunction: ['Cubic', 'Out'],
+    markerRenderer: marker => {
+      const textureImage = new THREE.TextureLoader().load(markerImage);
+      const geometry = new	 THREE.CircleGeometry( 3,50,0);
+      const material = new THREE.MeshBasicMaterial( { map: textureImage, side: THREE.DoubleSide } );
+        return new THREE.Mesh(geometry, material);
+    },
     markerTooltipRenderer: marker => `${marker.city} (${marker.value})`,
     // markerRadiusScaleRange: [0.01, 0.05],
   };
 
   const [globe, setGlobe] = useState(null);
-  console.log(globe); // captured globe instance with API methods
-  
+
   if(globe !== null){
     globe.resize({ height: "100%", width: "100%" })
     // const {clouds} = globe.earth;
     // console.log("cloud",clouds.material)
     // clouds.material.transparent = true;
   }
-  return (
+   return (
+   marker && (
     <>
       <div style={{width:"100%",height:"100%"}}>
       <ReactGlobe
@@ -405,7 +58,7 @@ export default ()=> {
         globeCloudsTexture={cloudImage}
         globeTexture={earthImage}
       // initialCoordinates={[1.3521, 103.8198]}
-        markers={markers}
+        markers={marker}
         options={options}
         width="100vw"
       // onClickMarker={(marker, markerObject, event) => console.log(marker, markerObject, event)}s
@@ -423,6 +76,6 @@ export default ()=> {
         width="100vw"
         // options={options}
       /> */}
-    </>
+    </>)
   );
 }
