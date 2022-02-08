@@ -7,3 +7,28 @@
     width: 100%;
     height: 100%;
 }
+.firstText1{
+    position: absolute;
+    top: 119%;
+    left: 40%;
+    font-size: 137px;
+    opacity: 0;
+}
+.secondText1{
+    position: absolute;
+    font-size: 45px;
+    width: 7%;
+    left: 5%;
+    top: 227%;
+    text-align: left;
+    opacity: 0;
+}
+.secondText2{
+    position: absolute;
+    font-size: 20px;
+    width: 16%;
+    left: 5%;
+    top:235%;
+    text-align: left;
+    opacity: 0;
+}
