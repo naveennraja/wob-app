@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/wob-app/static/css/main.aab1afd2.css",
-    "main.js": "/wob-app/static/js/main.6416e9f9.js",
+    "main.css": "/wob-app/static/css/main.d2ca187e.css",
+    "main.js": "/wob-app/static/js/main.1c72a06d.js",
     "static/media/earth-large.jpg": "/wob-app/static/media/earth-large.b1a1ed4fe0a37d45b0cd.jpg",
     "static/media/ForReffComplete.jpg": "/wob-app/static/media/ForReffComplete.469e0808608d92448e73.jpg",
+    "static/media/forReff.jpg": "/wob-app/static/media/forReff.816de294cdcc36fd07fb.jpg",
     "static/media/FullImage.jpg": "/wob-app/static/media/FullImage.77e03527b1050135f0b0.jpg",
     "static/media/Layer001.jpg": "/wob-app/static/media/Layer001.35cfebe2d6ae08062301.jpg",
     "static/media/background.png": "/wob-app/static/media/background.6376a942e1ef27fea433.png",
     "static/media/bump-large.jpg": "/wob-app/static/media/bump-large.a528dc07db214eef2886.jpg",
-    "static/media/Layer002.png": "/wob-app/static/media/Layer002.bfcd4c87a9b1b2b70c4d.png",
-    "static/media/Layer003.png": "/wob-app/static/media/Layer003.438a6202837c80d7c176.png",
+    "static/media/Background.jpg": "/wob-app/static/media/Background.8eb974627a452474d043.jpg",
     "static/media/clouds-large.jpg": "/wob-app/static/media/clouds-large.9d80ff3610e57349629e.jpg",
-    "static/media/Layer004.png": "/wob-app/static/media/Layer004.a97db612ff76663fee59.png",
-    "static/media/Layer005.png": "/wob-app/static/media/Layer005.fcf7f4743e42cd6b05a0.png",
+    "static/media/TestWater002.webp": "/wob-app/static/media/TestWater002.d9430eba42214b4249df.webp",
     "static/media/Cloud002.png": "/wob-app/static/media/Cloud002.b853e5083a73379874ac.png",
     "static/media/Cloud001.png": "/wob-app/static/media/Cloud001.aa7233f167a7579b8de0.png",
+    "static/media/Splash.png": "/wob-app/static/media/Splash.278a3554006c6d2ad216.png",
+    "static/media/Blockers.png": "/wob-app/static/media/Blockers.47840e764cac27a22768.png",
     "index.html": "/wob-app/index.html",
-    "main.aab1afd2.css.map": "/wob-app/static/css/main.aab1afd2.css.map",
-    "main.6416e9f9.js.map": "/wob-app/static/js/main.6416e9f9.js.map"
+    "main.d2ca187e.css.map": "/wob-app/static/css/main.d2ca187e.css.map",
+    "main.1c72a06d.js.map": "/wob-app/static/js/main.1c72a06d.js.map"
   },
   "entrypoints": [
-    "static/css/main.aab1afd2.css",
-    "static/js/main.6416e9f9.js"
+    "static/css/main.d2ca187e.css",
+    "static/js/main.1c72a06d.js"
   ]
 }
