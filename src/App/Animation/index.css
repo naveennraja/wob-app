@@ -9,9 +9,9 @@
 }
 .firstText1{
     position: absolute;
-    top: 119%;
+    top: 116%;
     left: 40%;
-    font-size: 137px;
+    font-size: 6em;
     opacity: 0;
 }
 .secondText1{
@@ -32,3 +32,139 @@
     text-align: left;
     opacity: 0;
 }
+.thirdText1{
+    position: absolute;
+    font-size: 39px;
+    width: 16%;
+    right: 5%;
+    top: 312%;
+    text-align: right;
+    opacity: 1;
+}
+.thirdText2{
+    position: absolute;
+    font-size: 20px;
+    width: 24%;
+    right: 5%;
+    top: 321%;
+    text-align: right;
+    opacity: 1;
+}
+.forthText8{
+    position: absolute;
+    font-size: 45px;
+    width: 24%;
+    right: 47%;
+    top: 472%;
+    text-align: right;
+    opacity: 0;
+}
+.forthText1{
+    position: absolute;
+    font-size: 28px;
+    width: 12%;
+    left: 13%;
+    top: 453%;
+    text-align: right;
+    opacity: 0;
+}
+.forthText2{
+    position: absolute;
+    font-size: 28px;
+    width: 14%;
+    left: 26%;
+    top: 440%;
+    text-align: right;
+    opacity: 0;
+}
+.forthText3{
+    position: absolute;
+    font-size: 28px;
+    width: 12%;
+    left: 28%;
+    top: 464%;
+    text-align: right;
+    opacity: 0;
+}
+.forthText4{
+    position: absolute;
+    font-size: 28px;
+    width: 14%;
+    left: 41%;
+    top: 449%;
+    text-align: right;
+    opacity: 0;
+}
+.forthText5{
+    position: absolute;
+    font-size: 28px;
+    width: 12%;
+    right: 31%;
+    top: 437%;
+    text-align: right;
+    opacity: 0;
+}
+.forthText6{
+    position: absolute;
+    font-size: 28px;
+    width: 13%;
+    right: 30%;
+    top: 461%;
+    text-align: right;
+    opacity: 0;
+}
+.forthText7{
+    position: absolute;
+    font-size: 28px;
+    width: 14%;
+    right: 16%;
+    top: 452%;
+    text-align: right;
+    opacity: 0;
+}
+#gifImage
+{
+width: 20%;
+height: 40%;
+position: absolute;
+top: 540%;
+left: 10%;
+}
+.gifImage{
+    position: absolute;
+    top: 0%;
+    right: 57%;
+    width: 49%;
+    height: 38%;
+}
+.Splash,.Blockers{
+    position: absolute;
+    width: 14%;
+    top: 13%;
+    right: 75%;
+    height: 28%;
+}
+.gifImageRight{
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    width: 49%;
+    height: 81%;
+}
+.SplashRight,.BlockersRight{
+    position: absolute;
+    width: 14%;
+    top: 58%;
+    right: 9%;
+    height: 28%;
+}
+.Blockers{
+    top: 26%;
+    right: 74%;
+}
+.BlockersRight{
+    top: 71%;
+    right: 9%;
+    transform: rotate(180deg);
+}
+
